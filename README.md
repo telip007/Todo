@@ -16,6 +16,7 @@ This scaffolded application provides a starting point for creating Swift applica
 
 ### Requirements
 * [Swift 3](https://swift.org/download/)
+* [CouchDB](http://guide.couchdb.org/draft/tour.html)
 
 ### Project contents
 This application has been generated with the following capabilities and services:
