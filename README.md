@@ -77,6 +77,28 @@ To compile the application using the tools docker image, run:
 To run the application:
 * `docker run -it -p 8080:8080 -v $PWD:/root/project -w /root/project myapp-run sh -c .build-ubuntu/release/todoApp`
 
+#### Models
+This project only holds one model. The model is called `Todo` and is added as a struct in swift
+```struct Todo {
+    public static var type: String {
+        return "todo"
+    }
+    let id: String
+    let title: String
+    let createdAt: UInt
+    let updatedAt: UInt
+    
+    var json: JSON {
+        return JSON([
+            "type": Todo.type,
+            "id": id,
+            "title": title,
+            "createdAt": createdAt,
+            "updatedAt": updatedAt
+            ])
+    }
+    
+}```
 
 ### License
 All generated content is available for use and modification under the permissive MIT License (see `LICENSE` file), with the exception of SwaggerUI which is licensed under an Apache-2.0 license (see `NOTICES.txt` file).
