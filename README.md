@@ -52,7 +52,7 @@ Boilerplate code for creating a client object for the Kitura-CouchDB API is incl
 The connection details for this client are loaded by the [configuration](#configuration) code and are passed to the Kitura-CouchDB client in the boilerplate code.
 
 #### Models
-This project only holds one model. The model is called `Todo` and is added as a struct in swift
+This project only holds one model. The model is called `Todo` and is added as a struct in swift.
 ```swift 
 struct Todo {
     public static var type: String {
@@ -75,6 +75,15 @@ struct Todo {
     
 }
 ```
+#### Routes
+Configured Routes are:
+*`http://localhost:8080/`
+*`http://localhost:8080/swiftmetrics-dash`
+*`http://localhost:8080/health`
+*`http://localhost:8080/todos`
+*`http://localhost:8080/todo`
+
+All routes are `GET` routes but the last one, which is a `POST` route. Routes are defined in `Sources/Application/Routes`.
 
 ### Configuration
 Your application configuration information is stored in the `config.json` in the project root directory. This file is in the `.gitignore` to prevent sensitive information from being stored in git.
