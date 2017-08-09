@@ -1,6 +1,8 @@
-## Scaffolded Swift Kitura server application
+## Todo - A sample project to get started with server-side code in swift with Kitura
 
 [![Platform](https://img.shields.io/badge/platform-swift-lightgrey.svg?style=flat)](https://developer.ibm.com/swift/)
+
+![Gif](https://media.giphy.com/media/SCIv8kaQzeGDC/giphy.gif)
 
 ### Table of Contents
 * [Summary](#summary)
