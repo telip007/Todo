@@ -53,7 +53,8 @@ The connection details for this client are loaded by the [configuration](#config
 
 #### Models
 This project only holds one model. The model is called `Todo` and is added as a struct in swift
-```struct Todo {
+```swift 
+struct Todo {
     public static var type: String {
         return "todo"
     }
@@ -73,6 +74,7 @@ This project only holds one model. The model is called `Todo` and is added as a 
     }
     
 }```
+
 
 
 ### Configuration
