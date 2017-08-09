@@ -49,8 +49,5 @@ internal func addTodo(request: RouterRequest, response: RouterResponse, next: @e
         }
         next()
     }
-        
-    
-    
     next()
 }
