@@ -73,9 +73,8 @@ struct Todo {
             ])
     }
     
-}```
-
-
+}
+```
 
 ### Configuration
 Your application configuration information is stored in the `config.json` in the project root directory. This file is in the `.gitignore` to prevent sensitive information from being stored in git.
