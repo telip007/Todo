@@ -1,0 +1,9 @@
+{
+  "id": "_design/main_design",
+  "views": {
+    "all_todos": {
+      "map" : "function(doc) {  if (doc.type == 'todo') { emit([doc.createdAt, doc.updatedAt], doc); } }"
+    }
+  },
+  "language": "javascript"
+}

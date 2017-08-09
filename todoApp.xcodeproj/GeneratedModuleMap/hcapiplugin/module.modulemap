@@ -1,0 +1,4 @@
+module hcapiplugin {
+    umbrella "/Users/talipgoek/Apps/Server-apps/todoApp/.build/checkouts/SwiftMetrics.git-8417478658542232501/Sources/hcapiplugin/include"
+    export *
+}
