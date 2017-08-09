@@ -47,6 +47,6 @@ internal func addTodo(request: RouterRequest, response: RouterResponse, next: @e
             response.status(.internalServerError).send(json: JSON(["error": "Could not service request", "localizedDescription": error?.localizedDescription]))
             break
         }
+        next()
     }
-    next()
 }
