@@ -50,7 +50,7 @@ class TodoMapper {
         var error: Error?
         database.create(todoJson) { (id, revision, document, err) in
             if let id = id {
-                Log.info("Todo \(id) created with id: \(id)")
+                Log.info("Todo \(title) created with id: \(id)")
                 todo = Todo(id: "\(id)", title: title, createdAt: createdAt, updatedAt: updatedAt)
                 return
             }
