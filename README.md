@@ -14,7 +14,7 @@
 * [Generator](#generator)
 
 ### Summary
-This scaffolded application provides a starting point for creating Swift applications running on [Kitura](https://developer.ibm.com/swift/kitura/).
+This sample server-side todo app in swift provides a nice and clean code to get started with IBMs [Kitura](https://developer.ibm.com/swift/kitura/).
 
 ### Requirements
 * [Swift 3](https://swift.org/download/)
