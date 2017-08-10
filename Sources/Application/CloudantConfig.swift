@@ -8,6 +8,7 @@ public struct CloudantConfig {
     public let secured: Bool
     public let username: String?
     public let password: String?
+    public let databaseName: String
 
     public init(manager: ConfigurationManager) {
 
@@ -16,6 +17,7 @@ public struct CloudantConfig {
         secured = manager["services:cloudant:0:secured"] as? Bool ?? false
         username = manager["services:cloudant:0:username"] as? String
         password = manager["services:cloudant:0:password"] as? String
+        databaseName = manager["services:cloudant:0:db_name"] as? String ?? "todo_db"
     }
 
 }

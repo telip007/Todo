@@ -14,18 +14,14 @@ public var port: Int = 8080
 internal var couchDBClient: CouchDBClient?
 internal var todoMapper: TodoMapper?
 
-fileprivate let dbName: String = "todo_db"
-
 public func initialize() throws {
-
     manager.load(file: "config.json", relativeFrom: .project)
            .load(.environmentVariables)
 
     port = manager.port
 
-    let sm = try SwiftMetrics()
-    let _ = try SwiftMetricsDash(swiftMetricsInstance : sm, endpoint: router)
-
+    setupSwiftMetrics()
+    
     setupDatabase()
     
     setupRoutes(for: router)
@@ -34,6 +30,11 @@ public func initialize() throws {
 public func run() throws {
     Kitura.addHTTPServer(onPort: port, with: router)
     Kitura.run()
+}
+
+fileprivate func setupSwiftMetrics() {
+    let sm = try SwiftMetrics()
+    let _ = try SwiftMetricsDash(swiftMetricsInstance : sm, endpoint: router)
 }
 
 fileprivate func setupDatabase() {
@@ -47,7 +48,7 @@ fileprivate func setupDatabase() {
     
     couchDBClient = CouchDBClient(connectionProperties: couchDBConnProps)
     
-    guard let database = couchDBClient?.database(dbName) else {
+    guard let database = couchDBClient?.database(cloudantConfig.databaseName) else {
         Log.error("No CouchDB client")
         return
     }
