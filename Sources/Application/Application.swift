@@ -20,9 +20,9 @@ public func initialize() throws {
 
     port = manager.port
 
-    setupSwiftMetrics()
+    try setupSwiftMetrics(endpoint: router)
     
-    setupDatabase()
+    setupDatabase(with: manager)
     
     setupRoutes(for: router)
 }
@@ -32,12 +32,12 @@ public func run() throws {
     Kitura.run()
 }
 
-fileprivate func setupSwiftMetrics() {
+fileprivate func setupSwiftMetrics(endpoint: Router) throws {
     let sm = try SwiftMetrics()
-    let _ = try SwiftMetricsDash(swiftMetricsInstance : sm, endpoint: router)
+    let _ = try SwiftMetricsDash(swiftMetricsInstance : sm, endpoint: endpoint)
 }
 
-fileprivate func setupDatabase() {
+fileprivate func setupDatabase(with manager: ConfigurationManager) {
     let cloudantConfig = CloudantConfig(manager: manager)
     
     let couchDBConnProps = ConnectionProperties(host:     cloudantConfig.host,
