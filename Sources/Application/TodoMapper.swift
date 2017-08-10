@@ -27,7 +27,8 @@ class TodoMapper {
     }
     
     func getAll(completionHandler: @escaping ResultBlock<[Todo]>) {
-        database.queryByView("all_todos", ofDesign: "main_design", usingParameters: [.descending(true)]) { (result: JSON?, error: NSError?) in
+        database.queryByView("all_todos", ofDesign: "main_design",
+                             usingParameters: [.descending(true)]) { (result: JSON?, error: NSError?) in
             if let result = result {
                 if let list = result["rows"].array {
                     let todos: [Todo] = list.map ({
@@ -47,7 +48,10 @@ class TodoMapper {
     func getTodo(by id: String, completionHandler: @escaping ResultBlock<Todo>) {
         database.retrieve(id) { (result: JSON?, error: Error?) in
             if let result = result {
-                let todo = Todo(id: result["_id"].stringValue, title: result["title"].stringValue, createdAt: result["createdAt"].uIntValue, updatedAt: result["updatedAt"].uIntValue)
+                let todo = Todo(id: result["_id"].stringValue,
+                                title: result["title"].stringValue,
+                                createdAt: result["createdAt"].uIntValue,
+                                updatedAt: result["updatedAt"].uIntValue)
                 completionHandler(.success(todo))
                 return
             }
