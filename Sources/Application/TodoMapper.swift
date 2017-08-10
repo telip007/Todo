@@ -36,6 +36,16 @@ class TodoMapper {
         }
     }
     
+    func getTodo(by id: String, completionHandler: @escaping ResultBlock<JSON>) {
+        database.retrieve(id) { (result: JSON?, error: Error?) in
+            if let result = result {
+                completionHandler(.success(result))
+                return
+            }
+            completionHandler(.failure(error))
+        }
+    }
+    
     func create(json: JSON, completionHandler: @escaping ResultBlock<Todo>) {
         guard let title = json["title"].string,
             let createdAt = json["createdAt"].uInt,

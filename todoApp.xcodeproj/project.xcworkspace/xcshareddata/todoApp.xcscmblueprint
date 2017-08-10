@@ -1,0 +1,142 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A1473F6FB97CF32E36365B9C693E222F101AC2E6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "92AF87893551AD3F2DEE78BEF3E924B9C5659E09" : 9223372036854775807,
+    "7056FA678C155D5ADEB1AABA62DBBD1612EDC71B" : 9223372036854775807,
+    "CB7FD8B39A3635BAEA340C1AE3EF89553CB3204E" : 9223372036854775807,
+    "AE423B7D903724BCDACD46E831D9C99BB4D7D766" : 9223372036854775807,
+    "3C204411A853DAB80C5D739B4751B473EEDB4D4F" : 9223372036854775807,
+    "40635794C1929E96A4709153927459486D34FA7B" : 9223372036854775807,
+    "54A52E4BB68292AC1D90714DEB453874C0296B59" : 9223372036854775807,
+    "43C021D2F0E746BBB29CA4E06229F111196D4871" : 9223372036854775807,
+    "77528AA6C8B451D66547916CA3CB970C85CBD7B4" : 9223372036854775807,
+    "A1473F6FB97CF32E36365B9C693E222F101AC2E6" : 9223372036854775807,
+    "F5058710F8A2E8A3B5FE01EF9CAF93B1FF7CECB8" : 9223372036854775807,
+    "5F415FE5B1A6A489A13E7907BF4842C23F213A35" : 9223372036854775807,
+    "85E996FB125657C20E42A299A76F925867A7A6E4" : 9223372036854775807,
+    "FAE24D5A8FEA749B395E6EB085765F54F8FA1263" : 9223372036854775807,
+    "658EF8E78768B63695EB9BC121BA70B25C4C7821" : 9223372036854775807,
+    "1A81AC7E588BE86E760603555BCE76FB0C611997" : 9223372036854775807,
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : 9223372036854775807,
+    "43425688648679ECEC3105C3812E3C82D04FD563" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C35E9CB2-3205-407C-A6C1-DF136931BDBE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "92AF87893551AD3F2DEE78BEF3E924B9C5659E09" : "todoApp\/.build\/checkouts\/HeliumLogger.git-2106793442615829935\/",
+    "7056FA678C155D5ADEB1AABA62DBBD1612EDC71B" : "todoApp\/.build\/checkouts\/Kitura-Request.git--6580905749313529741\/",
+    "CB7FD8B39A3635BAEA340C1AE3EF89553CB3204E" : "todoApp\/.build\/checkouts\/BlueCryptor.git-2709167748876642405\/",
+    "AE423B7D903724BCDACD46E831D9C99BB4D7D766" : "todoApp\/.build\/checkouts\/SwiftMetrics.git-8417478658542232501\/",
+    "3C204411A853DAB80C5D739B4751B473EEDB4D4F" : "todoApp\/.build\/checkouts\/Configuration.git--2683441109504822782\/",
+    "40635794C1929E96A4709153927459486D34FA7B" : "todoApp\/.build\/checkouts\/Kitura-net.git--7410958935072501107\/",
+    "54A52E4BB68292AC1D90714DEB453874C0296B59" : "todoApp\/.build\/checkouts\/CloudConfiguration.git-4897555340012784190\/",
+    "43C021D2F0E746BBB29CA4E06229F111196D4871" : "todoApp\/.build\/checkouts\/BlueSocket.git-3162807777605905816\/",
+    "77528AA6C8B451D66547916CA3CB970C85CBD7B4" : "todoApp\/.build\/checkouts\/BlueSSLService.git--6577639804771281610\/",
+    "A1473F6FB97CF32E36365B9C693E222F101AC2E6" : "todoApp\/",
+    "F5058710F8A2E8A3B5FE01EF9CAF93B1FF7CECB8" : "todoApp\/.build\/checkouts\/Kitura-WebSocket.git-6433030189920834003\/",
+    "5F415FE5B1A6A489A13E7907BF4842C23F213A35" : "todoApp\/.build\/checkouts\/Kitura-CouchDB.git--5564966604146993984\/",
+    "85E996FB125657C20E42A299A76F925867A7A6E4" : "todoApp\/.build\/checkouts\/LoggerAPI.git--6449715459278086880\/",
+    "FAE24D5A8FEA749B395E6EB085765F54F8FA1263" : "todoApp\/.build\/checkouts\/Swift-cfenv.git--8186875312477280204\/",
+    "658EF8E78768B63695EB9BC121BA70B25C4C7821" : "todoApp\/.build\/checkouts\/Health.git--5494501242754489797\/",
+    "1A81AC7E588BE86E760603555BCE76FB0C611997" : "todoApp\/.build\/checkouts\/Kitura-TemplateEngine.git--5059963620657797085\/",
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : "todoApp\/.build\/checkouts\/SwiftyJSON.git--6955445084174387031\/",
+    "43425688648679ECEC3105C3812E3C82D04FD563" : "todoApp\/.build\/checkouts\/Kitura.git-6522211175291160341\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "todoApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "todoApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/Kitura-TemplateEngine.git--5059963620657797085",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A81AC7E588BE86E760603555BCE76FB0C611997"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/Configuration.git--2683441109504822782",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3C204411A853DAB80C5D739B4751B473EEDB4D4F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/Kitura-net.git--7410958935072501107",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "40635794C1929E96A4709153927459486D34FA7B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/Kitura.git-6522211175291160341",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43425688648679ECEC3105C3812E3C82D04FD563"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/BlueSocket.git-3162807777605905816",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43C021D2F0E746BBB29CA4E06229F111196D4871"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/CloudConfiguration.git-4897555340012784190",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54A52E4BB68292AC1D90714DEB453874C0296B59"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/Kitura-CouchDB.git--5564966604146993984",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5F415FE5B1A6A489A13E7907BF4842C23F213A35"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/Health.git--5494501242754489797",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "658EF8E78768B63695EB9BC121BA70B25C4C7821"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/Kitura-Request.git--6580905749313529741",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7056FA678C155D5ADEB1AABA62DBBD1612EDC71B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/BlueSSLService.git--6577639804771281610",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "77528AA6C8B451D66547916CA3CB970C85CBD7B4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/LoggerAPI.git--6449715459278086880",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "85E996FB125657C20E42A299A76F925867A7A6E4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/HeliumLogger.git-2106793442615829935",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92AF87893551AD3F2DEE78BEF3E924B9C5659E09"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/telip007\/Todo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1473F6FB97CF32E36365B9C693E222F101AC2E6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/SwiftMetrics.git-8417478658542232501",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE423B7D903724BCDACD46E831D9C99BB4D7D766"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/SwiftyJSON.git--6955445084174387031",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/BlueCryptor.git-2709167748876642405",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CB7FD8B39A3635BAEA340C1AE3EF89553CB3204E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/Kitura-WebSocket.git-6433030189920834003",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F5058710F8A2E8A3B5FE01EF9CAF93B1FF7CECB8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/talipgoek\/Apps\/Server-apps\/todoApp\/.build\/repositories\/Swift-cfenv.git--8186875312477280204",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAE24D5A8FEA749B395E6EB085765F54F8FA1263"
+    }
+  ]
+}

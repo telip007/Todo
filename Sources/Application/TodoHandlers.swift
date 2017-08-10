@@ -12,7 +12,8 @@ import Kitura
 import LoggerAPI
 import SwiftyJSON
 
-internal func listAllTodos(request: RouterRequest, response: RouterResponse, next: @escaping ()->Void) -> Void {
+internal func listAllTodos(request: RouterRequest,
+                           response: RouterResponse, next: @escaping ()->Void) -> Void {
     Log.info("Handling list all todos")
     todoMapper?.getAll() { result in
         switch result {
@@ -27,7 +28,30 @@ internal func listAllTodos(request: RouterRequest, response: RouterResponse, nex
     }
 }
 
-internal func addTodo(request: RouterRequest, response: RouterResponse, next: @escaping ()->Void) -> Void {
+internal func getTodo(request: RouterRequest,
+                      response: RouterResponse, next: @escaping ()->Void) {
+    guard let id: String = request.parameters["id"] else {
+        response.status(.notFound).send(json: JSON(["error": "Not Found"]))
+        next()
+        return
+    }
+    Log.info("Displaying todos for \(id)")
+    
+    todoMapper?.getTodo(by: id) { result in
+        switch result {
+        case .success(let json):
+            response.status(.OK).send(json: json)
+            break
+        case .failure(let error):
+            response.status(.internalServerError).send(json: JSON(["error": "Could not service request", "localizedDescription": error?.localizedDescription]))
+            break
+        }
+        next()
+    }
+}
+
+internal func addTodo(request: RouterRequest,
+                      response: RouterResponse, next: @escaping ()->Void) -> Void {
     Log.info("Adding todo")
     let contentType = request.headers["Content-Type"] ?? "";
     guard case let .json(json) = request.body!,
