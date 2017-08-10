@@ -17,7 +17,10 @@ internal func listAllTodos(request: RouterRequest,
     Log.info("Handling list all todos")
     todoMapper?.getAll() { result in
         switch result {
-        case .success(let json):
+        case .success(let todos):
+            var json = JSON([:])
+            json["todos"] = JSON(todos.map({ $0.json }))
+            json["count"].int = todos.count
             response.status(.OK).send(json: json)
             break
         case .failure(let error):
@@ -39,8 +42,8 @@ internal func getTodo(request: RouterRequest,
     
     todoMapper?.getTodo(by: id) { result in
         switch result {
-        case .success(let json):
-            response.status(.OK).send(json: json)
+        case .success(let todo):
+            response.status(.OK).send(json: todo.json)
             break
         case .failure(let error):
             response.status(.internalServerError).send(json: JSON(["error": "Could not service request", "localizedDescription": error?.localizedDescription]))

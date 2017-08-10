@@ -26,20 +26,29 @@ class TodoMapper {
         self.database = database
     }
     
-    func getAll(completionHandler: @escaping ResultBlock<JSON>) {
-        database.queryByView("all_todos", ofDesign: "main_design", usingParameters: []) { (result: JSON?, error: NSError?) in
+    func getAll(completionHandler: @escaping ResultBlock<[Todo]>) {
+        database.queryByView("all_todos", ofDesign: "main_design", usingParameters: [.descending(true)]) { (result: JSON?, error: NSError?) in
             if let result = result {
-                completionHandler(.success(result))
+                if let list = result["rows"].array {
+                    let todos: [Todo] = list.map ({
+                        let data = $0["value"]
+                        return Todo(id: data["_id"].stringValue, title: data["title"].stringValue, createdAt: data["createdAt"].uIntValue, updatedAt: data["updatedAt"].uIntValue)
+                    })
+                    completionHandler(.success(todos))
+                    return
+                }
+                completionHandler(.failure(nil))
                 return
             }
             completionHandler(.failure(error))
         }
     }
     
-    func getTodo(by id: String, completionHandler: @escaping ResultBlock<JSON>) {
+    func getTodo(by id: String, completionHandler: @escaping ResultBlock<Todo>) {
         database.retrieve(id) { (result: JSON?, error: Error?) in
             if let result = result {
-                completionHandler(.success(result))
+                let todo = Todo(id: result["_id"].stringValue, title: result["title"].stringValue, createdAt: result["createdAt"].uIntValue, updatedAt: result["updatedAt"].uIntValue)
+                completionHandler(.success(todo))
                 return
             }
             completionHandler(.failure(error))
@@ -56,19 +65,17 @@ class TodoMapper {
             "createdAt": createdAt,
             "updatedAt": updatedAt
             ])
-        var todo: Todo?
-        var error: Error?
-        database.create(todoJson) { (id, revision, document, err) in
+        
+        database.create(todoJson) { (id, revision, document, error) in
             if let id = id {
                 Log.info("Todo \(title) created with id: \(id)")
-                todo = Todo(id: "\(id)", title: title, createdAt: createdAt, updatedAt: updatedAt)
+                let todo = Todo(id: "\(id)", title: title, createdAt: createdAt, updatedAt: updatedAt)
+                completionHandler(.success(todo))
                 return
             }
             Log.error("Oops something went wrong; could not create todo.")
-            error = err
+            completionHandler(.failure(error))
         }
-        guard let createdTodo = todo else { completionHandler(.failure(error)); return }
-        completionHandler(.success(createdTodo))
     }
     
 }
