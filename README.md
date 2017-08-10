@@ -84,7 +84,8 @@ Configured Routes are:
 * `http://localhost:8080/swiftmetrics-dash`
 * `http://localhost:8080/health`
 * `http://localhost:8080/todos`
-* `http://localhost:8080/todo`
+* `http://localhost:8080/todos/:id`
+* `http://localhost:8080/todos`
 
 All routes are `GET` routes but the last one, which is a `POST` route. Routes are defined in `Sources/Application/Routes`.
 
