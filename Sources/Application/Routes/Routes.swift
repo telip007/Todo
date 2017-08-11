@@ -17,9 +17,8 @@ public func setupRoutes(for router: Router) {
 }
 
 fileprivate func setupAPIRoutes(for router: Router) {
-    router.get("/todos", handler: listAllTodos)
+    router.get("/todos", handler: listAllTodos).post("/todos", handler: addTodo)
     router.get("/todos/:id", handler: getTodo)
-    router.post("/todos", handler: addTodo)
 }
 
 fileprivate func setupHealthRoute(for router: Router) {
